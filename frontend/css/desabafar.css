@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8eaff, #fce8f4, #eee7ff);
+    color: #4b3b5c;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 45px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 20px rgba(135, 82, 180, 0.10);
+    border-bottom: 1px solid #f0e2fc;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.logo p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #8052c8;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8052c8;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 12px 22px;
+    border-radius: 25px;
+    background: #f5eaff;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #e9d5ff;
+    color: #6638a5;
+    transform: translateY(-2px);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #8052c8;
+    margin-bottom: 12px;
+}
+
+.subtext {
+    color: #8b7b9d;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.form-section,
+.desabafos-section {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid #f0e2fc;
+    border-radius: 28px;
+    box-shadow: 0 12px 35px rgba(135, 82, 180, 0.10);
+    padding: 30px;
+    width: 460px;
+    max-width: 100%;
+    text-align: left;
+}
+
+h2 {
+    color: #8052c8;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    color: #655575;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid #e5d5f3;
+    border-radius: 15px;
+    padding: 14px;
+    margin-bottom: 20px;
+    background: #fcfaff;
+    color: #4b3b5c;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #b47be8;
+    box-shadow: 0 0 0 4px rgba(180, 123, 232, 0.12);
+    background: white;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #b5a6c4;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    background: linear-gradient(135deg, #b47be8, #e28bc5);
+    border: none;
+    color: white;
+    padding: 15px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+    box-shadow: 0 6px 18px rgba(180, 123, 232, 0.20);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(180, 123, 232, 0.30);
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.desabafo {
+    background: linear-gradient(135deg, #fcfaff, #fff5fb);
+    border: 1px solid #f0e2fc;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(135, 82, 180, 0.06);
+    transition: 0.3s;
+}
+
+.desabafo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(135, 82, 180, 0.12);
+}
+
+.desabafo h3 {
+    margin: 0 0 12px;
+    color: #8052c8;
+    font-size: 18px;
+}
+
+.desabafo p {
+    color: #655575;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.desabafo .autor {
+    font-size: 13px;
+    color: #a18db5;
+    margin-top: 12px;
+}
+
+.desabafo .acoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+button.remover {
+    background: linear-gradient(135deg, #f59ab9, #e86f9b);
+    box-shadow: none;
+}
+
+button.remover:hover {
+    background: #e86f9b;
+}
+
+.vazio {
+    text-align: center;
+    color: #a18db5;
+    font-size: 14px;
+    padding: 25px;
+    background: #fcfaff;
+    border-radius: 18px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .container {
+        margin: 25px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .subtext {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .content {
+        gap: 20px;
+    }
+
+    .form-section,
+    .desabafos-section {
+        padding: 22px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

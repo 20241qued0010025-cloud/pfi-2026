@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8eaff, #fce8f4, #eee7ff);
+    color: #4b3b5c;
+    text-align: center;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 18px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(135, 82, 180, 0.10);
+    border-bottom: 1px solid #f0e2fc;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #8052c8;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8052c8;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 18px;
+    border-radius: 25px;
+    background: #f5eaff;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #e9d5ff;
+    color: #6638a5;
+    transform: translateY(-2px);
+}
+
+main {
+    padding: 70px 20px;
+}
+
+.caixa {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 45px 35px;
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid #f0e2fc;
+    border-radius: 30px;
+    box-shadow: 0 12px 35px rgba(135, 82, 180, 0.10);
+}
+
+.tag {
+    display: inline-block;
+    background: #f5e7ff;
+    color: #b16fd3;
+    padding: 9px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #8052c8;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.caixa > p {
+    color: #81718f;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.botoes {
+    margin: 35px 0;
+}
+
+button {
+    border: none;
+    padding: 15px 28px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.ajuda {
+    background: linear-gradient(135deg, #b47be8, #e28bc5);
+    color: white;
+    box-shadow: 0 6px 18px rgba(180, 123, 232, 0.20);
+}
+
+.ajuda:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(180, 123, 232, 0.30);
+}
+
+.contatos-cvv {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contato {
+    background: linear-gradient(135deg, #fcfaff, #fff5fb);
+    border: 1px solid #f0dffb;
+    border-radius: 25px;
+    padding: 30px 22px;
+    width: 280px;
+    max-width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 6px 18px rgba(135, 82, 180, 0.08);
+}
+
+.contato:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(135, 82, 180, 0.15);
+}
+
+.contato h3 {
+    color: #8052c8;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contato p {
+    color: #81718f;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.contato a {
+    display: inline-block;
+    color: #b16fd3;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.contato a:hover {
+    color: #8052c8;
+    text-decoration: underline;
+}
+
+.mensagem-final {
+    display: inline-block;
+    background: linear-gradient(135deg, #f5e7ff, #fff0f8);
+    padding: 20px 35px;
+    border-radius: 20px;
+    color: #8052c8;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 45px;
+    line-height: 1.6;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.85);
+    border-top: 1px solid #f0e2fc;
+    padding: 22px;
+    color: #a18db5;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+footer p {
+    color: #a18db5;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 10px 14px;
+    }
+
+    main {
+        padding: 35px 15px;
+    }
+
+    .caixa {
+        padding: 30px 20px;
+        border-radius: 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .caixa > p {
+        font-size: 14px;
+    }
+
+    .contato {
+        width: 100%;
+    }
+
+    .mensagem-final {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+}

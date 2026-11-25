@@ -1,0 +1,240 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #faf6ff, #fff0f8, #f1eaff);
+    color: #3d3452;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 6%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(110, 70, 150, 0.08);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #8052c8;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #665778;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: linear-gradient(135deg, #b47be8, #e28bc5);
+    color: white;
+}
+
+body > h1 {
+    color: #b58ae8;
+    font-size: 24px;
+    margin: 25px 0;
+}
+
+.desabafar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 20px;
+}
+
+.box-desabafar {
+    background: linear-gradient(135deg, #b47be8, #e28bc5, #9c87ef);
+    border-radius: 28px;
+    box-shadow: 0 15px 35px rgba(160, 100, 200, 0.2);
+    padding: 65px 45px;
+    max-width: 850px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.box-desabafar h2 {
+    font-size: 2.4em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.box-desabafar p {
+    font-size: 1.05em;
+    margin-bottom: 25px;
+    line-height: 1.8;
+    color: white;
+}
+
+.box-desabafar button {
+    background: white;
+    color: #a05ec7;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 8px;
+    box-shadow: 0 5px 15px rgba(70, 30, 100, 0.1);
+}
+
+.box-desabafar button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.box-desabafar button:hover {
+    background: #f7e8ff;
+    transform: translateY(-3px);
+}
+
+main {
+    padding: 25px 20px;
+}
+
+main h1 {
+    text-align: center;
+    color: #8052c8;
+    margin-top: 35px;
+    font-size: 34px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #81718f;
+    margin-bottom: 45px;
+    line-height: 1.7;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 0 20px 70px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #f0e2fc;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(120, 75, 160, 0.08);
+    width: 300px;
+    padding: 28px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(120, 75, 160, 0.15);
+}
+
+.icon {
+    background: linear-gradient(135deg, #c69af5, #ed9bcf);
+    color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 auto 18px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    color: #8052c8;
+    margin-bottom: 10px;
+}
+
+.card span {
+    font-size: 0.9em;
+    color: #b17acb;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #716681;
+    margin-top: 15px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background: #ffffff;
+    color: #9586a7;
+    padding: 25px 10px;
+    font-size: 0.9em;
+    border-top: 1px solid #eee4fa;
+}
+
+footer p {
+    color: #9586a7;
+    line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 9px 12px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .box-desabafar {
+        padding: 40px 20px;
+    }
+
+    .box-desabafar h2 {
+        font-size: 1.7em;
+    }
+
+    .box-desabafar button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+}

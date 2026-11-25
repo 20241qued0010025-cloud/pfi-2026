@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8eaff, #fce8f4, #eee7ff);
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 40px;
+    border-radius: 28px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 15px 45px rgba(135, 82, 180, 0.15);
+    text-align: center;
+    border: 1px solid #f0e2fc;
+}
+
+.login-container h2 {
+    margin-bottom: 28px;
+    color: #8052c8;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #655575;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e5d5f3;
+    border-radius: 14px;
+    background: #fcfaff;
+    color: #3d3452;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #b47be8;
+    box-shadow: 0 0 0 4px rgba(180, 123, 232, 0.12);
+    background: white;
+}
+
+.form-group input::placeholder {
+    color: #b5a6c4;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #b47be8, #e28bc5);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 6px 18px rgba(180, 123, 232, 0.2);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(180, 123, 232, 0.3);
+}
+
+.texto-cadastro {
+    margin-top: 22px;
+    font-size: 14px;
+    color: #81718f;
+    line-height: 1.7;
+}
+
+.texto-cadastro a {
+    color: #b16fd3;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.texto-cadastro a:hover {
+    color: #8052c8;
+    text-decoration: underline;
+}
+
+.logo img {
+    width: 100px;
+    display: block;
+    margin: 0 auto 25px;
+    object-fit: contain;
+    filter: drop-shadow(0 5px 10px rgba(135, 82, 180, 0.15));
+}
+
+@media (max-width: 400px) {
+    .login-container {
+        width: 100%;
+        padding: 28px 22px;
+    }
+
+    .login-container h2 {
+        font-size: 25px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

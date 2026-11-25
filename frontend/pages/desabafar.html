@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço de Desabafos</title>
+    <link rel="stylesheet" href="../css/desabafar.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../img/loggo.png" alt="Logo do site">
+            <p>DesabafaQI</p>
+        </div>
+
+        <nav>
+            <a href="../pages/painel.html">🏠 Voltar</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Espaço de Desabafos</h1>
+
+        <p class="subtext">
+            Compartilhe sua história. Juntos somos mais fortes.
+        </p>
+
+        <section class="content">
+
+            <div class="form-section">
+                <h2>Compartilhe seu desabafo</h2>
+
+                <label for="titulo">Título</label>
+                <input
+                    type="text"
+                    id="titulo"
+                    placeholder="Dê um título ao seu desabafo"
+                >
+
+                <label for="texto">Seu desabafo</label>
+                <textarea
+                    id="texto"
+                    placeholder="Escreva aqui..."
+                ></textarea>
+
+                <button type="button" id="enviar">
+                    Enviar Desabafo ✔
+                </button>
+            </div>
+
+            <div class="desabafos-section">
+                <h2>Seus desabafos recentes</h2>
+                <div id="listaDesabafos" class="lista"></div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="../script/desabafar.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #faf6ff;
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #7a2fc5;
+  font-weight: 600;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.desabafar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 20px;
+}
+
+.box-desabafar {
+  background: linear-gradient(90deg, #e05cb3, #7366ff);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 90px;
+  max-width: 900px;
+  text-align: center;
+  color: white;
+}
+
+.box-desabafar h2 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.box-desabafar p {
+  font-size: 1em;
+  margin-bottom: 25px;
+}
+
+.box-desabafar button {
+  background: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.box-desabafar button a {
+  color: #e05cb3;
+  text-decoration: none;
+}
+
+.box-desabafar button:hover {
+  background: #f7e8ff;
+}
+
+main h1 {
+  text-align: center;
+  color: #7a2fc5;
+  margin-top: 30px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 20px 80px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 25px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  background-color: #b28afd;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.1em;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.card span {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.card p {
+  font-size: 0.95em;
+  color: #444;
+  margin-top: 10px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #f2ecff;
+  color: #555;
+  padding: 20px 10px;
+  font-size: 0.9em;
+}
+
+/* RESPONSIVO */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}

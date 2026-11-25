@@ -1,0 +1,171 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to bottom right, #fbe9ff, #f3f0ff);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo p {
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0077cc;
+}
+
+
+h1 {
+    font-size: 2.2rem;
+    color: #7b2cbf;
+}
+
+.subtext {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-section, 
+.desabafos-section {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    width: 400px;
+    text-align: left;
+}
+
+h2 {
+    color: #7b2cbf;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-family: inherit;
+    resize: none;
+}
+
+textarea {
+    height: 100px;
+}
+
+
+button {
+    background: linear-gradient(to right, #9b5de5, #7b2cbf);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button.remover {
+    background: #ff4d6d;
+}
+
+button.remover:hover {
+    background: #e63956;
+}
+
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.desabafo {
+    background: #f8f5ff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.desabafo h3 {
+    margin: 0 0 10px;
+    color: #7b2cbf;
+}
+
+.desabafo .autor {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.desabafo .acoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.vazio {
+    text-align: center;
+    color: #888;
+    font-size: 0.95rem;
+}
+
+/*  RESPONSIVOo  */
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
